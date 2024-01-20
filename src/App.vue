@@ -5,6 +5,7 @@ import ImGSection from './components/IMGSection.vue'
 import AboutUs from './components/AboutUs.vue'
 import Footer from './components/Footer.vue'
 import ReviewsSection from './components/ReviewsSection.vue'
+import Services from './components/Services.vue'
 
 </script>
 
@@ -12,6 +13,7 @@ import ReviewsSection from './components/ReviewsSection.vue'
   <NavBar />
   <ImGSection />
   <AboutUs />
+  <Services></Services>
   <ReviewsSection></ReviewsSection>
   <Footer></Footer>
   
