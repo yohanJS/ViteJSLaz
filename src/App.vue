@@ -3,6 +3,8 @@ import HelloWorld from './components/HelloWorld.vue'
 import NavBar from './components/NavBar.vue'
 import ImGSection from './components/IMGSection.vue'
 import AboutUs from './components/AboutUs.vue'
+import Footer from './components/Footer.vue'
+import ReviewsSection from './components/ReviewsSection.vue'
 
 </script>
 
@@ -10,6 +12,8 @@ import AboutUs from './components/AboutUs.vue'
   <NavBar />
   <ImGSection />
   <AboutUs />
+  <ReviewsSection></ReviewsSection>
+  <Footer></Footer>
   
   <!-- <div>
     <a href="https://vitejs.dev" target="_blank">
