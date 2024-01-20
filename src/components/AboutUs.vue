@@ -7,7 +7,7 @@
     <div class="col-md-12 tex-center">
       <p class="lead fw-bold">About Us</p>
     </div>
-    <div class="col-md-6 text-start">
+    <div class="col-md-6 text-center p-2">
       <p>
         Here at Laz Appliance Repair, where exceptional service meets unmatched expertise in home appliance repairs.
          With a passion for precision and a commitment to customer satisfaction, we take pride in being your trusted 
@@ -16,9 +16,7 @@
          malfunctioning refrigerator, a misbehaving washing machine, or any other household appliance, we understand 
          the importance of a smoothly running home. At Laz Appliance Repair, we strive to exceed expectations by delivering 
          prompt, professional, and affordable repair services. Your comfort and convenience are our top priorities, 
-         and we look forward to the opportunity to restore your appliances to their optimal functionality. Choose 
-         Laz Appliance Repair for excellence in home 
-        appliance repairs – where we turn challenges into solutions for a happier and more smoothly running home.
+         and we look forward to the opportunity to restore your appliances to their optimal functionality.
       </p>
     </div>
   </div>
