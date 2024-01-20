@@ -1,14 +1,14 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
 import NavBar from './components/NavBar.vue'
-import HeroSection from './components/HeroSection.vue'
-import AboutUs from './components/AboutUs.vue';
+import ImGSection from './components/IMGSection.vue'
+import AboutUs from './components/AboutUs.vue'
 
 </script>
 
 <template>
   <NavBar />
-  <HeroSection />
+  <ImGSection />
   <AboutUs />
   
   <!-- <div>
