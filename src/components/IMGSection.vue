@@ -6,7 +6,7 @@
   <div class="container-fluid p-0 mt-5">
     <div class="row g-0">
       <div class="col-md-12 text-start mt-3">
-        <h1 class="fs-3 mt-2 mb-3">Laz Appliances Repair LLC</h1>
+        <h1 class="fs-3 mt-5 mb-4 m-1">Laz Appliances Repair LLC</h1>
       </div>
       <div class="col-md-12">
         <div class="position-relative">

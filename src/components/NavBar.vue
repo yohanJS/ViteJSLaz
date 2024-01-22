@@ -6,7 +6,7 @@
   <nav class="navbar navbar-expand-md bg-light fixed-top p-0 lg-shadow border-bottom">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
-      <img src="../assets/LazLogo.svg" alt="Bootstrap" width="75" height="50">
+      <img src="../assets/LazLogo.svg" alt="Bootstrap" width="75" height="75">
     </a>
     <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
       <span class="navbar-toggler-icon"></span>
@@ -24,7 +24,7 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Serices</a>
+            <a class="nav-link" href="#">Services</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#">About Us</a>
