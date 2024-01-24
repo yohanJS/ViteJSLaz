@@ -29,22 +29,14 @@
               </svg>
               <span class="fw-bold"> verified customer</span>
               <div class="stars">
-      <!-- Use the SVG star icon five times for the rating -->
-      <svg
-        v-for="star in 5"
-        :key="star"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 16 16"
-        fill="none"
-        stroke="currentColor"
-        stroke-width="1.5"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        class="star-icon"
-      >
-        <polygon points="8 1 10.09 4.26 14 5.27 11 8.64 12.18 11.52 8 9.27 3.82 11.52 5 8.64 1 5.27 5.91 4.26 8 1" />
-      </svg>
-    </div>
+                <!-- Use the SVG star icon five times for the rating -->
+                <svg v-for="star in 5" :key="star" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="none"
+                  stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"
+                  class="star-icon">
+                  <polygon
+                    points="8 1 10.09 4.26 14 5.27 11 8.64 12.18 11.52 8 9.27 3.82 11.52 5 8.64 1 5.27 5.91 4.26 8 1" />
+                </svg>
+              </div>
             </div>
           </div>
           <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls"
@@ -93,11 +85,13 @@ export default {
 </script>
 
 <style>
-
 .star-icon {
-  width: 12px; /* Adjust the size as needed */
+  width: 12px;
+  /* Adjust the size as needed */
   height: 12px;
-  margin-right: 2px; /* Adjust spacing between stars */
-  fill: gold; /* Customize the star color */
+  margin-right: 2px;
+  /* Adjust spacing between stars */
+  fill: gold;
+  /* Customize the star color */
 }
 </style>
