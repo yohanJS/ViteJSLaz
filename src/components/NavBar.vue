@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <nav class="navbar navbar-expand-md bg-light fixed-top p-0 lg-shadow border-bottom">
+  <nav class="navbar navbar-expand-md bg-light fixed-top p-0 lg-shadow border-bottom shadow-sm">
   <div class="container-fluid">
     <a class="navbar-brand" href="#">
       <img src="../assets/LazLogo.svg" alt="Bootstrap" width="75" height="75">
@@ -24,13 +24,13 @@
             <a class="nav-link active" aria-current="page" href="#">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Services</a>
+            <a class="nav-link" href="#services">Services</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">About Us</a>
+            <a class="nav-link" href="#about">About Us</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#">Contact Us</a>
+            <a class="nav-link" href="#footer">Contact Us</a>
           </li>
         </ul>
       </div>

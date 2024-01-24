@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="container my-5">
+  <div class="container my-5" id="services">
     <section>
       <div class="text-center mb-5">
         <h4 class="fw-bold">SERVICES</h4>
