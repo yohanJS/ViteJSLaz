@@ -3,11 +3,13 @@
   <section class="bg-light mt-5 mb-5 p-4 shadow-sm" id="reviews">
     <div class="row d-flex justify-content-center">
       <div class="col-md-10 col-xl-8 text-center">
-        <h4 class="mb-4 fw-bold">TESTIMONIALS</h4>
-        <p class="mb-4 pb-2 mb-md-5 pb-md-0">
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet
-          numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum
-          quisquam eum porro a pariatur veniam.
+        <h4 class="mb-4 fw-bold">VERIFIED CUSTOMER TESTIMONIALS</h4>
+        <p class="mb-4 pb-2 mb-md-5 pb-md-0 text-start">
+          At Laz Appliances Repair LLC, we take pride in the feedback from our customers. 
+          Each testimonial you read here is a genuine expression of satisfaction from individuals 
+          who have experienced our exceptional service. We believe in transparency and trust, and 
+          that's why all our testimonials are from verified users. Join the countless others who have 
+          chosen Laz Appliances Repair LLC for a reliable and trustworthy experience.
         </p>
       </div>
     </div>
@@ -71,7 +73,7 @@ export default {
         // Using axios
         const response = await axios.get('https://www.bloggyapi.com/blogpost');
         this.reviews = response.data;
-        console.log(this.reviews);
+        //console.log(this.reviews);
       } catch (error) {
         console.error('Error fetching reviews:', error);
       }
