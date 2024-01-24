@@ -55,14 +55,14 @@
           <div class="col-lg-4 col-md-6 mb-5 mb-md-0">
             <h5 class="text-uppercase mb-4">Contact</h5>
             <ul class="p-0 list-group">
-              <li class="list-group-item  mb-3">
-                New York, NY 10012, US
+              <li class="list-group-item mb-3">
+                Central Florida, US
               </li>
-              <li class="list-group-item  mb-3">
-                lazappliancesrepair@gmail.com
+              <li class="list-group-item mb-3">
+                <a href="mailto:lazappliancesrepair@yahoo.com">lazappliancesrepair@yahoo.com</a>
               </li>
-              <li class="list-group-item  mb-3">
-                72758964587
+              <li class="list-group-item mb-3">
+                813-526-9637
               </li>
             </ul>
           </div>
@@ -75,15 +75,15 @@
             <ul class="p-0 list-group">
               <li class="list-group-item mb-3 d-flex justify-content-between align-items-center">
                 Mon - Thu
-                <span class="badge bg-primary">8am - 9pm</span>
+                <span class="badge bg-primary">8am - 6pm</span>
               </li>
               <li class="list-group-item mb-3 d-flex justify-content-between align-items-center">
                 Fri - Sat
-                <span class="badge bg-primary">8am - 1am</span>
+                <span class="badge bg-danger">Closed</span>
               </li>
               <li class="list-group-item mb-3 d-flex justify-content-between align-items-center">
                 Sunday
-                <span class="badge bg-primary">9am - 10pm</span>
+                <span class="badge bg-danger">Closed</span>
               </li>
             </ul>
           </div>

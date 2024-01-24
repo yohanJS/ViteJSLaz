@@ -6,9 +6,9 @@
   <div class="container-fluid p-0 mt-5">
     <div class="row g-0">
       <div class="col-md-12 text-start mt-3">
-        <h1 class="fs-3 mt-5 mb-4 m-1">Laz Appliances Repair LLC</h1>
+        <h1 class="fs-3 mt-5 mb-4 m-1 fw-bold">Laz Appliances Repair LLC</h1>
       </div>
-      <div class="col-md-12">
+      <div class="col-md-12 shadow-lg">
         <div class="position-relative">
           <img src="../assets/heroImg.png" alt="Background Image" class="img-fluid" style="object-fit: cover; width: 100%; height: 100vh;">
           <div class="overlay"></div>
