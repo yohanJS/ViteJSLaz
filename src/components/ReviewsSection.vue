@@ -69,7 +69,7 @@ export default {
     async fetchData() {
       try {
         // Using axios
-        const response = await axios.get('https://localhost:7011/BlogPost');
+        const response = await axios.get('https://www.bloggyapi.com/blogpost');
         this.reviews = response.data;
         console.log(this.reviews);
       } catch (error) {
