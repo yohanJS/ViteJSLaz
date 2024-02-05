@@ -3,7 +3,7 @@
   <section class="bg-light mt-5 mb-5 p-4 shadow-sm" id="reviews">
     <div class="row d-flex justify-content-center">
       <div class="col-md-10 col-xl-8 text-center">
-        <h4 class="mb-4 fw-bold">VERIFIED CUSTOMER TESTIMONIALS</h4>
+        <h4 class="mb-4 fw-bold">CUSTOMER TESTIMONIALS</h4>
         <p class="mb-4 pb-2 mb-md-5 pb-md-0 text-start">
           At Laz Appliances Repair LLC, we take pride in the feedback from our customers. 
           Each testimonial you read here is a genuine expression of satisfaction from individuals 
