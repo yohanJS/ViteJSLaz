@@ -6,6 +6,7 @@ import AboutUs from './components/AboutUs.vue'
 import Footer from './components/Footer.vue'
 import ReviewsSection from './components/ReviewsSection.vue'
 import Services from './components/Services.vue'
+import ReviewForm from './components/ReviewForm.vue'
 
 </script>
 
@@ -15,6 +16,7 @@ import Services from './components/Services.vue'
   <AboutUs />
   <Services></Services>
   <ReviewsSection></ReviewsSection>
+  <ReviewForm></ReviewForm>
   <Footer></Footer>
   
 </template>

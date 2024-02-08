@@ -3,13 +3,10 @@
   <section class="bg-light mt-5 mb-5 p-4 shadow-sm" id="reviews">
     <div class="row d-flex justify-content-center">
       <div class="col-md-10 col-xl-8 text-center">
-        <h4 class="mb-4 fw-bold">VERIFIED CUSTOMER TESTIMONIALS</h4>
+        <h4 class="mb-4 fw-bold">CUSTOMER TESTIMONIALS</h4>
         <p class="mb-4 pb-2 mb-md-5 pb-md-0 text-start">
           At Laz Appliances Repair LLC, we take pride in the feedback from our customers. 
-          Each testimonial you read here is a genuine expression of satisfaction from individuals 
-          who have experienced our exceptional service. We believe in transparency and trust, and 
-          that's why all our testimonials are from verified users. Join the countless others who have 
-          chosen Laz Appliances Repair LLC for a reliable and trustworthy experience.
+           Join the countless others who have chosen Laz Appliances Repair LLC for a reliable and trustworthy experience.
         </p>
       </div>
     </div>
@@ -20,7 +17,7 @@
         <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div v-for="(review, index) in reviews" :key="index" class="carousel-item" :class="{ active: index === 0 }">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img%20(1).webp" class="rounded-circle shadow-1-strong"
+              <img src="../assets/LazLogo.svg" class="rounded-circle shadow-1-strong"
                 width="150" height="150" alt="Reviewer Avatar" />
               <p class="m-0 p-0 mt-5">{{ review.content }}</p>
               <p class="lead mt-2">{{ review.author }}</p>
