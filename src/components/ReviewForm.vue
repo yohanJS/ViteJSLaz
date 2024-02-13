@@ -2,7 +2,7 @@
   <div class="container p-3 bg-light">
     <div class="row">
       <div class="col-12 col-md-6 m-auto">
-        <form class="border border-1 shadow-lg rounded-2 p-3" action="POST" id="reviewForm">
+        <form class="border border-1 shadow-lg rounded-2 p-3" action="index.html" method="POST" id="reviewForm">
           <h5 class="form-label fw-bold">Write a review</h5>
           <textarea class="form-control" v-model="content"  rows="6" cols="50"></textarea>
           <div class="col-12 col-md-6 m-auto mt-3">
@@ -99,37 +99,6 @@
 
 <style scoped></style>
 
-<!-- <script setup>
-// Import axios
-import axios from 'axios';
-
-
-// // axios POST request
-// const options = {
-  
-//   url: 'https://localhost:7165/api/Review',
-//   method: 'POST',
-//   xsrfCookieName: 'XSRF-TOKEN',
-//   xsrfHeaderName: 'X-XSRF-TOKEN',
-//   headers: {
-//     'Accept': 'application/json',
-//     'Content-Type': 'application/json;charset=UTF-8'
-//   },
-//   data: {
-//     phoneNumber: '2345678976',
-//     content: "TEST",
-//     author: "Adam Garcia",
-//     rating: "4"
-//   }
-// };
-
-// axios(options)
-//   .then(response => {
-//     console.log(response.status);
-//   });
-
-</script> -->
-
 <script>
 import axios from "axios";
 
@@ -156,7 +125,7 @@ export default {
             author: this.author,
             rating: this.rating
           }
-        );
+        ).then(alert("Thank you for your review! Your feedback helps us improve."));
       } catch (error) {
         console.log(error);
       }
