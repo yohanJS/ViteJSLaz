@@ -68,8 +68,8 @@ export default {
     async fetchData() {
       try {
         // Using axios
-        //const response = await axios.get('https://www.bloggyapi.com/blogpost');
-        const response = await axios.get('https://localhost:7165/api/Review');
+        const response = await axios.get('https://www.bloggyapi.com/Review');
+        //const response = await axios.get('https://localhost:7165/api/Review');
         this.reviews = response.data;
       } catch (error) {
         console.error('Error fetching reviews:', error);
