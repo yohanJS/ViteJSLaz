@@ -7,7 +7,7 @@
     <div class="col-md-12 tex-center">
       <h4 class="fw-bold mt-2">ABOUT US</h4>
     </div>
-    <div class="col-md-8 text-start p-2">
+    <div class="col-md-8 p-4">
       <p>
         Here at Laz Appliance Repair, where exceptional service meets unmatched expertise in home appliance repairs.
          With a passion for precision and a commitment to customer satisfaction, we take pride in being your trusted 

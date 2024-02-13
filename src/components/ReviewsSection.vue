@@ -14,12 +14,12 @@
     <!--Carousel-->
     <div class="row justify-content-center">
       <div class="col-md-6">
-        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
           <div class="carousel-inner">
             <div v-for="(review, index) in reviews" :key="index" class="carousel-item" :class="{ active: index === 0 }">
-              <img src="../assets/LazLogo.svg" class="rounded-circle shadow-1-strong"
-                width="150" height="150" alt="Reviewer Avatar" />
-              <p class="m-0 p-0 mt-5">{{ review.content }}</p>
+              <img src="../assets/LazLogo.svg" class="rounded-2 shadow-lg p-3 shadow-1-strong"
+                width="100" height="100" alt="Reviewer Avatar" />
+              <p class="m-0 p-0 mt-5 w-75 m-auto">{{ review.content }}</p>
               <p class="lead mt-2">{{ review.author }}</p>
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-patch-check-fill"
                 viewBox="0 0 16 16">
@@ -38,12 +38,12 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev mb-5" type="button" data-bs-target="#carouselExampleControls"
+          <button class="carousel-control-prev mb-5" type="button" data-bs-target="#reviewsCarousel"
             data-bs-slide="prev">
             <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next mb-5" type="button" data-bs-target="#carouselExampleControls"
+          <button class="carousel-control-next mb-5" type="button" data-bs-target="#reviewsCarousel"
             data-bs-slide="next">
             <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
             <span class="visually-hidden">Next</span>
@@ -69,9 +69,8 @@ export default {
       try {
         // Using axios
         //const response = await axios.get('https://www.bloggyapi.com/blogpost');
-        const response = await axios.get('https://localhost:7011/Reviews');
+        const response = await axios.get('https://localhost:7165/api/Review');
         this.reviews = response.data;
-        console.log(this.reviews);
       } catch (error) {
         console.error('Error fetching reviews:', error);
       }
