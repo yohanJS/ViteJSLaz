@@ -148,7 +148,7 @@ export default {
     async createReview() {
       try {
         const { data } = await axios.post(
-          // "https://localhost:7165/api/Review",
+          //"https://localhost:7165/api/Review",
           "https://www.bloggyapi.com/api/Review",
           {
             phoneNumber: this.phoneNumber,
@@ -157,7 +157,6 @@ export default {
             rating: this.rating
           }
         );
-        this.post = data;
       } catch (error) {
         console.log(error);
       }
