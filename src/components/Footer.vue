@@ -88,7 +88,7 @@
 
             <ul class="p-0 list-group">
               <li class="list-group-item mb-3 d-flex justify-content-between align-items-center">
-                Mon - Thu
+                Mon - Fri
                 <span class="badge bg-primary">8am - 6pm</span>
               </li>
               <li class="list-group-item mb-3 d-flex justify-content-between align-items-center">
