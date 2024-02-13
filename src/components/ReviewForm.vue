@@ -2,7 +2,7 @@
   <div class="container p-3 bg-light">
     <div class="row">
       <div class="col-12 col-md-6 m-auto">
-        <form class="border border-1 shadow-lg rounded-2 p-3" action="https://lazappliancesrepairllc.com" method="POST" id="reviewForm">
+        <form class="border border-1 shadow-lg rounded-2 p-3" action="" method="POST" id="reviewForm">
           <h5 class="form-label fw-bold">Write a review</h5>
           <textarea class="form-control" v-model="content"  rows="6" cols="50"></textarea>
           <div class="col-12 col-md-6 m-auto mt-3">
