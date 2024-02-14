@@ -125,7 +125,7 @@ export default {
             author: this.author,
             rating: this.rating
           }
-        ).then();
+        ).then(data => data.status);
       } catch (error) {
         console.log(error);
       }
