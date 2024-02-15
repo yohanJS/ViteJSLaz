@@ -1,5 +1,5 @@
 <template>
-  <div class="container p-3 bg-light">
+  <div class="container p-5 bg-light">
     <div class="row">
       <div class="col-12 col-md-6 m-auto">
         <form class="border border-1 shadow-lg rounded-2 p-3" id="reviewForm">

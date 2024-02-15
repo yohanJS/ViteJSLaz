@@ -12,10 +12,10 @@ import ReviewForm from './components/ReviewForm.vue'
 <template>
   <NavBar />
   <ImGSection />
-  <AboutUs />
   <Services></Services>
   <ReviewsSection></ReviewsSection>
   <ReviewForm></ReviewForm>
+  <AboutUs />
   <Footer></Footer>
   
 </template>

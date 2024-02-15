@@ -14,7 +14,7 @@
           <div class="overlay"></div>
           <div class="w-75 position-absolute top-50 start-50 translate-middle text-white">
             <h1 class="display-4 fw-bold text-dark">Don't ditch it. Switch to fix it!</h1>
-            <a href="#" class="btn btn-primary btn-lg text-white">INQUIRE NOW</a>
+            <a href="tel:8135269637" class="btn btn-primary btn-lg text-white">INQUIRE NOW</a>
           </div>
         </div>
       </div>
