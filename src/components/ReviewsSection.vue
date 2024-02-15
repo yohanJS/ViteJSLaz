@@ -3,7 +3,7 @@
   <section class="bg-light mt-5 mb-5 p-5 shadow-sm" id="reviews">
     <div class="row d-flex justify-content-center">
       <div class="col-md-10 col-xl-8 text-center">
-        <h4 class="mb-4 fw-bold">CUSTOMER TESTIMONIALS</h4>
+        <h3 class="mb-4 fw-bold">CUSTOMER TESTIMONIALS</h3>
         <p class="mb-4 pb-2 mb-md-5 pb-md-0 text-start">
           At Laz Appliances Repair LLC, we take pride in the feedback from our customers. 
            Join the countless others who have chosen Laz Appliances Repair LLC for a reliable and trustworthy experience.

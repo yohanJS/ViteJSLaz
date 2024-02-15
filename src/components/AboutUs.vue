@@ -5,7 +5,7 @@
 <template>
   <div class="row g-0 d-flex justify-content-center mt-5 bg-light mb-5 mt-5 p-5 shadow-sm" id="about">
     <div class="col-md-12 tex-center">
-      <h4 class="fw-bold mt-2">ABOUT US</h4>
+      <h3 class="fw-bold mt-2">ABOUT US</h3>
     </div>
     <div class="col-md-8 p-4">
       <p>
