@@ -91,11 +91,7 @@
                 <span class="badge bg-primary">8am - 6pm</span>
               </li>
               <li class="list-group-item mb-3 d-flex justify-content-between align-items-center">
-                Fri - Sat
-                <span class="badge bg-danger">Closed</span>
-              </li>
-              <li class="list-group-item mb-3 d-flex justify-content-between align-items-center">
-                Sunday
+                Sat - Sunday
                 <span class="badge bg-danger">Closed</span>
               </li>
             </ul>
