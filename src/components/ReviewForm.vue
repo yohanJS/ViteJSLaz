@@ -8,7 +8,7 @@
           v-on:submit.prevent="createReview"
         >
           <h3 class="form-label fw-bold">Write a review</h3>
-          <textarea
+          <textarea required
             class="form-control"
             for="content"
             aria-label="Write a summary of your service"
@@ -19,6 +19,7 @@
           <div class="col-12 col-md-6 m-auto mt-3">
             <label class="form-label fw-bold">Full Name</label>
             <input
+              required
               class="form-control"
               for="author"
               aria-label="Enter author's name"
@@ -28,6 +29,7 @@
           <div class="col-12 col-md-6 m-auto mt-3">
             <label class="form-label fw-bold">Phone Number</label>
             <input
+              required
               class="form-control"
               for="phoneNumber"
               aria-label="Enter phone number"
@@ -52,6 +54,7 @@
             </svg>
             ★★★★★
             <input
+              required
               class="form-check-input"
               aria-label="Rate your service"
               for="rating"
@@ -76,6 +79,7 @@
             </svg>
             ★★★★
             <input
+              required
               class="form-check-input"
               aria-label="Rate your service"
               for="rating"
@@ -101,6 +105,7 @@
             </svg>
             ★★★
             <input
+              required
               class="form-check-input"
               aria-label="Rate your service"
               for="rating"
@@ -125,6 +130,7 @@
             </svg>
             ★★
             <input
+              required
               class="form-check-input"
               aria-label="Rate your service"
               for="rating"
@@ -149,6 +155,7 @@
             </svg>
             ★
             <input
+              required
               class="form-check-input"
               aria-label="Rate your service"
               for="rating"
@@ -202,8 +209,8 @@ export default {
       try {
         const { data } = await axios
           .post(
-            //"https://localhost:7165/api/Review",
-            "https://www.bloggyapi.com/api/Review",
+            "https://localhost:7165/api/Review",
+            //"https://www.bloggyapi.com/api/Review",
             {
               phoneNumber: this.phoneNumber,
               content: this.content,
