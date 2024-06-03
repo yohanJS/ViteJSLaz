@@ -1,30 +1,51 @@
-
 <template>
   <section class="bg-light mt-5 mb-5 p-5 shadow-sm" id="reviews">
     <div class="row d-flex justify-content-center">
       <div class="col-md-10 col-xl-8 text-center">
         <h3 class="mb-4 fw-bold">CUSTOMER TESTIMONIALS</h3>
         <p class="mb-4 pb-2 mb-md-5 pb-md-0 text-start">
-          At Laz Appliances Repair LLC, we take pride in the feedback from our customers. 
-           Join the countless others who have chosen Laz Appliances Repair LLC for a reliable and trustworthy experience.
+          At Laz Appliances Repair LLC, we take pride in the feedback from our
+          customers. Join the countless others who have chosen Laz Appliances
+          Repair LLC for a reliable and trustworthy experience.
         </p>
       </div>
     </div>
 
     <!--Carousel-->
     <div class="row justify-content-center">
-      <div class="col-md-6">
-        <div id="reviewsCarousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="col-md-6 p-0">
+        <div
+          id="reviewsCarousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
           <div class="carousel-inner">
-            <div v-for="(review, index) in reviews" :key="index" class="carousel-item" :class="{ active: index === 0 }">
-              <img src="../assets/LazLogo.svg" class="rounded-2 shadow-lg p-3 shadow-1-strong"
-                width="100" height="100" alt="Reviewer Avatar" />
+            <div
+              v-for="(review, index) in reviews"
+              :key="index"
+              class="carousel-item"
+              :class="{ active: index === 0 }"
+            >
+              <img
+                src="../assets/LazLogo.svg"
+                class="rounded-2 shadow-lg p-3 shadow-1-strong"
+                width="100"
+                height="100"
+                alt="Reviewer Avatar"
+              />
               <p class="m-0 p-0 mt-5 w-75 m-auto">{{ review.content }}</p>
               <p class="lead mt-2">{{ review.author }}</p>
-              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="blue" class="bi bi-patch-check-fill"
-                viewBox="0 0 16 16">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="16"
+                fill="blue"
+                class="bi bi-patch-check-fill"
+                viewBox="0 0 16 16"
+              >
                 <path
-                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708" />
+                  d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708"
+                />
               </svg>
               <!-- <span class="fw-bold"> verified customer</span> -->
               <div class="stars">
@@ -38,14 +59,48 @@
               </div>
             </div>
           </div>
-          <button class="carousel-control-prev mb-5" type="button" data-bs-target="#reviewsCarousel"
-            data-bs-slide="prev">
-            <span class="carousel-control-prev-icon bg-dark" aria-hidden="true"></span>
+          <button
+            class="carousel-control-prev mb-5"
+            type="button"
+            data-bs-target="#reviewsCarousel"
+            data-bs-slide="prev"
+          >
+            <span class="" aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="#000000"
+                class="bi bi-arrow-left-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"
+                />
+              </svg>
+            </span>
             <span class="visually-hidden">Previous</span>
           </button>
-          <button class="carousel-control-next mb-5" type="button" data-bs-target="#reviewsCarousel"
-            data-bs-slide="next">
-            <span class="carousel-control-next-icon bg-dark" aria-hidden="true"></span>
+          <button
+            class="carousel-control-next mb-5"
+            type="button"
+            data-bs-target="#reviewsCarousel"
+            data-bs-slide="next"
+          >
+            <span class="" aria-hidden="true">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="40"
+                height="40"
+                fill="#000000"
+                class="bi bi-arrow-right-circle-fill"
+                viewBox="0 0 16 16"
+              >
+                <path
+                  d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"
+                />
+              </svg>
+            </span>
             <span class="visually-hidden">Next</span>
           </button>
         </div>
@@ -56,7 +111,7 @@
 
 <script>
 // Import axios
-import axios from 'axios';
+import axios from "axios";
 
 export default {
   data() {
@@ -68,7 +123,9 @@ export default {
     async fetchData() {
       try {
         // Using axios
-        const response = await axios.get('https://www.bloggyapi.com/api/Review');
+        const response = await axios.get(
+          "https://www.bloggyapi.com/api/Review"
+        );
         //const response = await axios.get('https://localhost:7165/api/Review');
         this.reviews = response.data;
       } catch (error) {
