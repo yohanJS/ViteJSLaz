@@ -19,7 +19,7 @@
             </div>
             <div class="px-3 text-center pb-3">
               <h5 class="text-uppercase" style="font-weight: 600">Appliance Repairs</h5>
-              <p class="font-weight-light my-3">We Fix It All: From malfunctioning ovens to finicky 
+              <p class="font-weight-light my-3 text-start">We Fix It All: From malfunctioning ovens to finicky 
                 washing machines, our skilled technicians specialize in repairing a wide range of home 
                 appliances.All Brands Welcome: No matter the brand, we've got you covered. Our experts 
                 are well-versed in repairing appliances from various manufacturers.</p>
@@ -36,7 +36,7 @@
             </div>
             <div class="px-3 text-center pb-3">
               <h5 class="text-uppercase" style="font-weight: 600">Dryer Duct Cleaning</h5>
-              <p class="font-weight-light my-3">Safety First: Ensure the safety of your home 
+              <p class="font-weight-light my-3 text-start">Safety First: Ensure the safety of your home 
                 with our professional dryer duct cleaning service. Efficiency Boost: Improve your 
                 dryer's performance and reduce the risk of fire hazards by opting for our thorough 
                 dryer duct cleaning.</p>
@@ -54,7 +54,7 @@
             </div>
             <div class="px-3 text-center pb-3">
               <h5 class="text-uppercase" style="font-weight: 600">Maintenance</h5>
-              <p class="font-weight-light my-3">
+              <p class="font-weight-light my-3 text-start">
                 Preventive Care: Keep your appliances running smoothly with our regular 
                 maintenance services.Extend Lifespan: Prolong the life of your appliances 
                 and save money in the long run by investing in routine maintenance.

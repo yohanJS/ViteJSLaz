@@ -4,7 +4,7 @@
 
 <template>
   <!-- Remove the container if you want to extend the Footer to full width. -->
-  <div class="my-5" id="footer">
+  <div class="container-fluid p-0 m-0" id="footer">
 
     <footer class="text-white text-center text-lg-start bg-dark">
       <!-- Grid container -->

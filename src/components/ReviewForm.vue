@@ -1,22 +1,14 @@
 <template>
-  <div class="container p-5 bg-light">
-    <div class="row">
-      <div class="col-12 col-md-6 m-auto">
+  <div class="container-fluid pt-5 pb-5 p-3 bg-light">
+    <div class="row d-flex justify-content-center">
+      <div class="col-12 col-md-6">
         <form
-          class="border border-1 shadow-lg rounded-2 p-3"
+          class="border border-1 shadow-lg rounded-2 p-3 bg-light"
           id="reviewForm"
           v-on:submit.prevent="createReview"
         >
-          <h3 class="form-label fw-bold">Write a review</h3>
-          <textarea required
-            class="form-control"
-            for="content"
-            aria-label="Write a summary of your service"
-            v-model="content"
-            rows="6"
-            cols="50"
-          ></textarea>
-          <div class="col-12 col-md-6 m-auto mt-3">
+        <div class="row">
+          <div class="col-12 col-md-6 mt-3 text-start">
             <label class="form-label fw-bold">Full Name</label>
             <input
               required
@@ -26,7 +18,7 @@
               v-model="author"
             />
           </div>
-          <div class="col-12 col-md-6 m-auto mt-3">
+          <div class="col-12 col-md-6 mt-3 text-start">
             <label class="form-label fw-bold">Phone Number</label>
             <input
               required
@@ -37,7 +29,30 @@
               type="tel"
             />
           </div>
-          <div class="col-12 col-md-6 m-auto mt-3">
+          <div class="col-12 mt-3 text-start">
+            <label class="form-label fw-bold">Email</label>
+            <input
+              required
+              class="form-control"
+              for="email"
+              aria-label="Enter email"
+              v-model="email"
+              type="email"
+            />
+          </div>
+        </div>
+        <div class="col-12 mt-3 text-start">
+          <label class="form-label fw-bold">Write a review</label>
+          <textarea required
+            class="form-control"
+            for="content"
+            aria-label="Write a summary of your service"
+            v-model="content"
+            rows="6"
+            cols="50"
+          ></textarea>
+        </div>
+          <div class="col-12 mt-3">
             <label class="form-label fw-bold">Rate your experience</label>
             <br />
             <svg
@@ -166,31 +181,72 @@
               value="1"
             />
           </div>
-
-          <div class="col-12 text-end mt-4">
-            <button type="reset" id="reset" class="btn btn-danger m-1">
-              Reset
-            </button>
-            <button type="submit" id="submit" class="btn btn-primary">
+          <div class="col-12 text-end mt-2">
+            <div class="col-12 text-center">
+            <button
+              type="submit"
+              id="submit"
+              class="btn btn-lg rounded-pill btn-color btn-text-color fw-bold mt-5 mb-2"
+              style="width: 250px"
+            >
               Submit
             </button>
+            </div>
+            <div class="col-12 text-center">
+            <button
+              type="reset"
+              id="reset"
+              class="btn btn-lg rounded-pill btn-danger fw-bold m-0 mb-4"
+              style="width: 250px"
+            >
+              Reset
+            </button>
+            </div>
           </div>
         </form>
-        <div v-if="successMessage" class="alert alert-success" role="alert">
-            {{ successMessage }}
+        <!--Success Modal -->
+        <div>
+          <div class="modal fade" id="submissionModal" tabindex="-1" aria-labelledby="submissionModalLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+              <div class="modal-content txt-color">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="submissionModalLabel">Thank you {{ name }}</h5>
+                  <button type="button" class="btn-close text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                  <p>We're committed to using your review to improve.</p>
+                  <img src="../assets/LazLogo.svg" alt="Bootstrap" width="100" height="100">
+                </div>
+              </div>
+            </div>
           </div>
-          <div v-if="errorMessage" class="alert alert-danger" role="alert">
+          <div v-if="errorMessage != ''" class="alert alert-danger mt-2" role="alert">
             {{ errorMessage }}
           </div>
+        </div>
       </div>
     </div>
   </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.split-bg {
+  background: linear-gradient(to bottom, #0a323d 40%, #ffffff 40%);
+}
+/* Button style */
+.btn-color {
+  background-color: #3d8ad0;
+}
+.btn-text-color {
+  color: #ffffff;
+}
+</style>
 
 <script>
 import axios from "axios";
+import { Modal } from "bootstrap";
+
+
 
 export default {
   data() {
@@ -202,7 +258,12 @@ export default {
       successMessage: "",
       errorMessage: "",
       post: {},
+      isSubmissionOk: false,
+      name: ""
     };
+  },
+  content: {
+    name: "Yohan",
   },
   methods: {
     async createReview() {
@@ -219,15 +280,21 @@ export default {
             }
           )
           .then(
+            this.name = this.author,
             this.content = "",
             this.phoneNumber = "",
             this.author = "",
             this.rating = "",
-            this.successMessage = "Thank you for your feedback."
+            this.isSubmissionOk = true,
+            this.author = this.author,
           );
+          const modalElement = document.getElementById("submissionModal");
+          const submissionModal = new Modal(modalElement);
+          if(this.isSubmissionOk) {
+            submissionModal.show();
+          };
       } catch (error) {
         this.errorMessage = "Failed to submit review. Please try again.";
-        console.log(error);
       }
     },
   },
