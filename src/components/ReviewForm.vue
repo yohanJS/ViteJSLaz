@@ -276,6 +276,7 @@ export default {
               phoneNumber: this.phoneNumber,
               content: this.content,
               author: this.author,
+              email: this.email,
               rating: this.rating,
             }
           )
@@ -284,6 +285,7 @@ export default {
             this.content = "",
             this.phoneNumber = "",
             this.author = "",
+            this.email = "",
             this.rating = "",
             this.isSubmissionOk = true,
             this.author = this.author,
