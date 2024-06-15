@@ -46,7 +46,4 @@
 .navbar-toggler {
   border: none !important;
 }
-.navbar-toggler-icon {
-  
-}
 </style>

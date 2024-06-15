@@ -6,7 +6,7 @@
   <div class="container my-5" id="services">
     <section>
       <div class="text-center mb-5">
-        <h3 class="fw-bold">SERVICES</h3>
+        <h1 class="display-1">SERVICES</h1>
       </div>
       <div class="row">
         <div class="col-md-4 my-2">

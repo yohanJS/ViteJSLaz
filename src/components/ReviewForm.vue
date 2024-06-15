@@ -1,9 +1,9 @@
 <template>
-  <div class="container-fluid pt-5 pb-5 p-3 bg-light">
+  <div class="container-fluid pt-5 pb-5 p-3">
     <div class="row d-flex justify-content-center">
       <div class="col-12 col-md-6">
         <form
-          class="border border-1 shadow-lg rounded-2 p-3 bg-light"
+          class="border border-1 shadow-lg rounded-2 p-3"
           id="reviewForm"
           v-on:submit.prevent="createReview"
         >
