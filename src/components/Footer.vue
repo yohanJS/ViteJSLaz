@@ -104,7 +104,7 @@
 
       <!-- Copyright -->
       <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
-        © 2024 Copyright:
+        © {{ new Date().getFullYear() }} Copyright:
         <a class="text-white" href="https://lazappliancesrepairllc.com/" target="_blank">Laz Appliances Repair LLC. All rights reserved.</a>
       </div>
       <!-- Copyright -->
