@@ -14,7 +14,8 @@
           <div class="overlay"></div>
           <div class="w-75 position-absolute top-50 start-50 translate-middle text-white">
             <h1 class="display-4 fw-bold text-dark">Don't ditch it. Switch to fix it!</h1>
-            <a href="tel:8135269637" class="btn btn-primary btn-lg text-white">INQUIRE NOW</a>
+            <br>
+            <a href="tel:8135269637" class="inquiry-btn text-white">INQUIRE NOW</a>
           </div>
         </div>
       </div>
@@ -23,5 +24,12 @@
 </template>
 
 <style scoped>
-
+.inquiry-btn {
+  background-color: rgb(0 35 127);
+  padding: 15px 30px;
+  border-radius: 35px;
+}
+.inquiry-btn:hover {
+  font-weight: bolder;
+}
 </style>

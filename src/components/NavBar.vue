@@ -39,4 +39,14 @@
 </nav>
 </template>
 
-<style scoped></style>
+<style scoped>
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.navbar-toggler {
+  border: none !important;
+}
+.navbar-toggler-icon {
+  
+}
+</style>
