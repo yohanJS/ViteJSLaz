@@ -13,7 +13,7 @@
           <img src="../assets/heroImg.png" alt="Background Image" class="img-fluid" style="object-fit: cover; width: 100%; height: 100vh;">
           <div class="overlay"></div>
           <div class="w-75 position-absolute top-50 start-50 translate-middle text-white">
-            <h1 class="display-1 fw-bold text-dark">Don't ditch it. Switch to fix it!</h1>
+            <h1 class="display-2 fw-bold text-dark">Don't ditch it. Switch to fix it!</h1>
             <br>
             <a href="tel:8135269637" class="inquiry-btn text-white">INQUIRE NOW</a>
           </div>
