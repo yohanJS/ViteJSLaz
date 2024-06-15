@@ -52,7 +52,7 @@
               </div>
               <img
               v-if="review.rating == '5'"
-                src="../assets/FiveStarts.svg"
+                src="../assets/FourStarts.svg"
                 class=""
                 width="100"
                 height="100"
