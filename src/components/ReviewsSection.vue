@@ -14,9 +14,9 @@
     <!--Carousel-->
     <div class="row justify-content-center">
       <div class="col-md-6 p-0">
-        <div
+        <div v-if="isLoadingComplete"
           id="reviewsCarousel"
-          class="carousel slide"
+          class="carousel slide p-3 m-4"
           data-bs-ride="carousel"
         >
           <div class="carousel-inner">
@@ -119,6 +119,12 @@
             <span class="visually-hidden">Next</span>
           </button>
         </div>
+        <div v-else>
+          <div class="d-flex align-items-center justify-content-center">
+            <strong>Loading reviews.... </strong>
+            <div class="spinner-border ml-auto" role="status" aria-hidden="true"></div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -132,6 +138,7 @@ export default {
   data() {
     return {
       reviews: [],
+      isLoadingComplete: false,
     };
   },
   methods: {
@@ -142,6 +149,7 @@ export default {
           "https://www.bloggyapi.com/api/Review"
         );
         //const response = await axios.get('https://localhost:7165/api/Review');
+        this.isLoadingComplete = true;
         this.reviews = response.data;
       } catch (error) {
         console.error(error);
@@ -156,6 +164,10 @@ export default {
 </script>
 
 <style>
+.carousel {
+  background-color: antiquewhite !important;
+  border-radius: 10px;
+}
 .star-icon {
   width: 12px;
   /* Adjust the size as needed */
