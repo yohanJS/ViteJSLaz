@@ -2,8 +2,8 @@
   <section class="bg-light mt-5 mb-5 py-5 px-3 shadow-sm" id="reviews">
     <div class="row d-flex justify-content-center">
       <div class="col-md-10 col-xl-8 text-center">
-        <h1 class="display-3 mb-4">CUSTOMER TESTIMONIALS</h1>
-        <p class="mb-4 pb-5 mb-md-5 pb-md-0 text-start">
+        <p class="fw-bold mb-4">CUSTOMER TESTIMONIALS</p>
+        <p class="mb-4 p-3 mb-md-5 pb-md-0 text-start">
           At Laz Appliances Repair LLC, we take pride in the feedback from our
           customers. Join the countless others who have chosen Laz Appliances
           Repair LLC for a reliable and trustworthy experience.
@@ -55,7 +55,7 @@
                 src="../assets/five.svg"
                 class=""
                 width="100"
-                height="100"
+                height="50"
                 alt="Reviewer Avatar"
               />
               <img
@@ -63,7 +63,7 @@
                 src="../assets/FourStarts.svg"
                 class=""
                 width="100"
-                height="100"
+                height="50"
                 alt="Reviewer Avatar"
               />
               <img
@@ -71,7 +71,7 @@
                 src="../assets/ThreeStarts.svg"
                 class=""
                 width="100"
-                height="100"
+                height="50"
                 alt="Reviewer Avatar"
               />
               <img
@@ -79,7 +79,7 @@
                 src="../assets/TwoStarts.svg"
                 class=""
                 width="100"
-                height="100"
+                height="50"
                 alt="Reviewer Avatar"
               />
               <img
@@ -87,7 +87,7 @@
                 src="../assets/OneStart.svg"
                 class=""
                 width="100"
-                height="100"
+                height="50"
                 alt="Reviewer Avatar"
               />
             </div>

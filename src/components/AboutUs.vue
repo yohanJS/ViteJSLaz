@@ -5,9 +5,9 @@
 <template>
   <div class="row g-0 d-flex justify-content-center mt-5 bg-light mb-5 mt-5 px-3 shadow-sm" id="about">
     <div class="col-md-12 tex-center">
-      <h3 class="display-3 py-3">ABOUT US</h3>
+      <p class="py-3 fw-bold">ABOUT US</p>
     </div>
-    <div class="col-md-8 p-1 text-start">
+    <div class="col-md-8 p-3 text-start">
       <p>
         Here at Laz Appliance Repair, where exceptional service meets unmatched expertise in home appliance repairs.
          With a passion for precision and a commitment to customer satisfaction, we take pride in being your trusted 
