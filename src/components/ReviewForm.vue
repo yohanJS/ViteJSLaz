@@ -3,13 +3,16 @@
     <div class="row d-flex justify-content-center">
       <div class="col-12 col-md-6">
         <form
-          class="border border-1 shadow-lg rounded-2 p-3"
+          class="border-none shadow-lg rounded-2 p-3"
           id="reviewForm"
           v-on:submit.prevent="createReview"
         >
         <div class="row">
+          <div class="col-12 col-md-6 text-start">
+            <label class="lead fw-bold mt-2 mb-1">Rate your experience</label>
+          </div>
           <div class="col-12 col-md-6 mt-3 text-start">
-            <label class="form-label fw-bold">Full Name</label>
+            <label class="form-label">Full Name</label>
             <input
               required
               class="form-control"
@@ -19,7 +22,7 @@
             />
           </div>
           <div class="col-12 col-md-6 mt-3 text-start">
-            <label class="form-label fw-bold">Phone Number</label>
+            <label class="form-label">Phone Number</label>
             <input
               required
               class="form-control"
@@ -30,7 +33,7 @@
             />
           </div>
           <div class="col-12 mt-3 text-start">
-            <label class="form-label fw-bold">Email</label>
+            <label class="form-label">Email</label>
             <input
               required
               class="form-control"
@@ -42,19 +45,17 @@
           </div>
         </div>
         <div class="col-12 mt-3 text-start">
-          <label class="form-label fw-bold">Write a review</label>
+          <label class="form-label">Write a review</label>
           <textarea required
             class="form-control"
             for="content"
             aria-label="Write a summary of your service"
             v-model="content"
-            rows="6"
+            rows="3"
             cols="50"
           ></textarea>
         </div>
           <div class="col-12 mt-3">
-            <label class="lead fw-bold mt-3 mb-4">Rate your experience</label>
-            <br />
             <span style="color: #fecd4c; font-size: 1.8rem;">★★★★★</span>
             <input
               required
@@ -120,28 +121,33 @@
               value="1"
             />
           </div>
-          <div class="col-12 text-end mt-2">
-            <div class="col-12 text-center">
-            <button
-              type="submit"
-              id="submit"
-              class="btn btn-lg rounded-pill btn-color btn-text-color fw-bold mt-5 mb-2"
-              style="width: 250px"
-            >
-              Submit
-            </button>
-            </div>
-            <div class="col-12 text-center">
+          <div class="row text-end pb-4">
+          <div class="col-12 text-center">
             <button
               type="reset"
               id="reset"
-              class="btn btn-lg rounded-pill btn-danger fw-bold m-0 mb-4"
-              style="width: 250px"
+              class="btn btn-outline-danger fw-bold mt-5 me-1"
+              style="width: 120px"
             >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-eraser" viewBox="0 0 16 16">
+              <path d="M8.086 2.207a2 2 0 0 1 2.828 0l3.879 3.879a2 2 0 0 1 0 2.828l-5.5 5.5A2 2 0 0 1 7.879 15H5.12a2 2 0 0 1-1.414-.586l-2.5-2.5a2 2 0 0 1 0-2.828zm2.121.707a1 1 0 0 0-1.414 0L4.16 7.547l5.293 5.293 4.633-4.633a1 1 0 0 0 0-1.414zM8.746 13.547 3.453 8.254 1.914 9.793a1 1 0 0 0 0 1.414l2.5 2.5a1 1 0 0 0 .707.293H7.88a1 1 0 0 0 .707-.293z"/>
+            </svg>
               Reset
             </button>
-            </div>
+            <button
+              type="submit"
+              id="submit"
+              class="btn btn-color btn-text-color fw-bold mt-5"
+              style="width: 120px"
+            >
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-send" viewBox="0 0 16 16">
+              <path d="M15.854.146a.5.5 0 0 1 .11.54l-5.819 14.547a.75.75 0 0 1-1.329.124l-3.178-4.995L.643 7.184a.75.75 0 0 1 .124-1.33L15.314.037a.5.5 0 0 1 .54.11ZM6.636 10.07l2.761 4.338L14.13 2.576zm6.787-8.201L1.591 6.602l4.339 2.76z"/>
+            </svg>
+              Submit
+            </button>
           </div>
+        </div>
+
         </form>
         <!--Success Modal -->
         <div>
@@ -201,9 +207,6 @@ export default {
       name: ""
     };
   },
-  content: {
-    name: "Yohan",
-  },
   methods: {
     async createReview() {
       try {
@@ -234,6 +237,12 @@ export default {
           if(this.isSubmissionOk) {
             submissionModal.show();
           };
+
+          setTimeout(function(){
+            window.location.reload();
+            window.location.href = "#reviews";
+          }, 5000);
+
       } catch (error) {
         this.errorMessage = "Failed to submit review. Please try again.";
       }
