@@ -8,7 +8,7 @@
           v-on:submit.prevent="createReview"
         >
         <div class="row">
-          <div class="col-12 col-md-6 text-start">
+          <div class="col-12 text-start">
             <label class="lead fw-bold mt-2 mb-1">Rate your experience</label>
           </div>
           <div class="col-12 col-md-6 mt-3 text-start">
