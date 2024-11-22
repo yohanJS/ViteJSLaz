@@ -146,7 +146,7 @@ export default {
       try {
         // Using axios
         const response = await axios.get(
-          "http://www.bloggyapi.com/api/Review"
+          "https://www.bloggyapi.com/api/Review"
         );
         //const response = await axios.get('https://localhost:7165/api/Review');
         this.isLoadingComplete = true;
