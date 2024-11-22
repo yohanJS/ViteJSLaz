@@ -144,8 +144,8 @@ export default {
       try {
         const { data } = await axios
           .post(
-            "http://localhost:7165/api/Review",
-            //"https://www.bloggyapi.com/api/Review",
+            //"http://localhost:7165/api/Review",
+            "http://www.bloggyapi.com/api/Review",
             {
               phoneNumber: this.phoneNumber,
               content: this.content,
