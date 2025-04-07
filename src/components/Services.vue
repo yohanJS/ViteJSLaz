@@ -18,7 +18,7 @@
 </svg>
             </div>
             <div class="text-center pb-3">
-              <p class="text-uppercase">Appliance Repairs</p>
+              <p class="text-uppercase fw-bold">Appliance Repairs</p>
               <p class="font-weight-light my-3 text-start p-3">We Fix It All: From malfunctioning ovens to finicky 
                 washing machines, our skilled technicians specialize in repairing a wide range of home 
                 appliances.All Brands Welcome: No matter the brand, we've got you covered. Our experts 
