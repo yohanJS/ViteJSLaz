@@ -145,8 +145,8 @@ export default {
     async fetchData() {
       try {
         // Using axios
-        //const response = await axios.get("https://www.bloggyapi.com/api/Review");
-        const response = await axios.get('https://localhost:7165/api/Review');
+        const response = await axios.get("https://www.bloggyapi.com/api/Review");
+        //const response = await axios.get('https://localhost:7165/api/Review');
         this.isLoadingComplete = true;
         this.reviews = response.data;
       } catch (error) {
